@@ -1,25 +1,25 @@
 import React, {Component} from 'react'
 import {bindActionCreators} from 'redux'
 import PropertyList from '../../components/PropertyList'
+import PropertyGrid from '../../components/PropertyGrid'
 import * as propertyActions from '../../actions/property'
 import {connect} from 'react-redux'
-// import Property from '../../components/Property';
 
 class Home extends Component {
   componentWillMount() {
     this.props.actions.getProperties()
+    console.log('home'+this.props);
   }
 
   render() {
-    const {properties} = this.props;
+    const {properties, actions} = this.props;
 
     return (
-      <div className="home mt-5">
-        <div className="row">
-          <div className="col-12">
-            <h2 className="mb-3">Realestate Demo</h2>
-          </div>
+      <div className="home">
+        <div className="header">
+          <h1>Realestate Demo</h1>
         </div>
+        {/* {this.props.listView === true ? <PropertyList properties={properties} propertyDetails={actions.propertyDetails} /> : <PropertyGrid properties={properties} propertyDetails={actions.propertyDetails}/>} */}
         <PropertyList properties={properties} />
       </div>
     )
