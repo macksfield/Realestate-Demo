@@ -1,12 +1,12 @@
 import React from 'react'
-import Property from '../Property'
+import PropertyCard from '../PropertyCard'
 import './styles.scss'
 
 const PropertyList = ({properties}) =>
   <ul id="propertyList">
       {properties.map(property => {
           return (
-            <Property key={property.id} property={property}/>
+            <PropertyCard key={property.id} property={property}/>
           )
         }
       )}

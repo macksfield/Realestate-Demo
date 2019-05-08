@@ -1,8 +1,9 @@
 import { combineReducers } from 'redux'
-import property from './propertyReducer'
+import propertyReducer from './propertyReducer'
+import viewReducer from './viewReducer'
 
 const realestateApp = combineReducers({
-  property
+  propertyReducer, viewReducer
 });
 
 export default realestateApp

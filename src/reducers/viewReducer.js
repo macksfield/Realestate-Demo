@@ -1,14 +1,14 @@
 import * as types from '../constants/types'
 
 const INITIAL_STATE = {
-    properties: [],
+    cardView: true
 };
 
 export default function (state = INITIAL_STATE, action) {
     switch (action.type) {
-        case types.FETCH_PROPERTIES:
+        case types.SWITCH_VIEW:
             return {
-                ...state, properties: action.payload
+                ...state, cardView: action.cardView
             };
 
         default:

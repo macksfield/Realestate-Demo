@@ -5,7 +5,7 @@ import { Link } from  'react-router-dom';
 
 const noData = 'No data available.';
 
-const Property = ({property}) =>
+const PropertyCard = ({property}) =>
     <li key={property.id} className="property" >
         <Link to={{pathname: '/propertyDetails/' + property.id, state: { selectedProperty: property }}}>
             <figure>
@@ -39,4 +39,4 @@ const Property = ({property}) =>
         </div>
     </li>;
 
-export default Property
+export default PropertyCard

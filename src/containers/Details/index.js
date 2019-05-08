@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {bindActionCreators} from 'redux'
-import * as propertyActions from '../../actions/property'
+import * as propertyActions from '../../actions/propertyActions'
 import {connect} from 'react-redux'
 import PropertyDetails from '../../components/PropertyDetails';
 
@@ -14,9 +14,6 @@ class Details extends Component {
 
     return (
       <div className="details">
-        <div className="header">
-          <h1>Realestate Demo</h1>
-        </div>
         <PropertyDetails properties={properties} />
       </div>
     )
@@ -25,7 +22,7 @@ class Details extends Component {
 
 export default connect(
   state => ({
-    properties: state.property.properties,
+    properties: state.propertyReducer.properties,
   }),
   dispatch => ({
     actions: bindActionCreators(propertyActions, dispatch)
