@@ -2,7 +2,9 @@ import * as types from '../constants/types'
 
 export const getProperties = () =>
     dispatch =>
-        fetch('http://dev1-sample.azurewebsites.net/properties.json')
+        //api end point no longer works, so fetch local backup
+        // fetch('http://dev1-sample.azurewebsites.net/properties.json')
+        fetch('/properties.json')
             .then(response => response.json())
             .then(response => {
                 // console.log(response.properties);
@@ -11,3 +13,4 @@ export const getProperties = () =>
                     payload: response.properties
                 })
             })
+
