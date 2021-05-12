@@ -24,6 +24,7 @@ import reducer from './reducers'
 import App from './containers/App'
 
 import './styles/App.scss'
+import 'bulma/css/bulma.css'
 
 const loggerMiddleware = createLogger();
 

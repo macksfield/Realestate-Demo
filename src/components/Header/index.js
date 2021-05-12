@@ -3,12 +3,20 @@ import './styles.scss'
 
 const Header = () =>
     <div>
-        <header id="header">
-            <a href="/"><h1>React, Router, Redux, Redux-Thunk Example Project Architecture</h1></a>
-            <p>This project is designed to service as a template for a ReactJS project using the above technologies. Please ignore the lack of styling, this is an architectural example - see GitHub for how it is built.</p>
-            <p>Users can switch between a list and a grid view, and view an image gallery when clicking individual listings.</p>
-            <a href="https://github.com/macksfield/Realestate-Demo">GitHub Project</a>
-        </header>
+        <nav id="header" className={"navbar is-info navbar-menu"}>
+            <div className="navbar-start">
+                <a className="navbar-item home">
+                    <a href="/"><h1>React, Router, Redux, Redux-Thunk Example Project Architecture</h1></a>
+                </a>
+            </div>
+            <div className="navbar-end">
+                <div className="navbar-item">
+                    <div className="buttons">
+                        <a class="button" href="https://github.com/macksfield/Realestate-Demo">GitHub Project</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <br/>
     </div>
 

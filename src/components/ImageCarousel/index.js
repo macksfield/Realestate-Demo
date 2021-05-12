@@ -26,8 +26,8 @@ class ImageCarousel extends Component {
         return (
             <div>
                 <div className="buttonsContainer">
-                    <button onClick={this.decrement} disabled={this.state.selectedImage <= 0}>Back</button>
-                    <button onClick={this.increment} disabled={this.state.selectedImage >= images.length - 1}>Next
+                    <button className="button" onClick={this.decrement} disabled={this.state.selectedImage <= 0}>Back</button>
+                    <button className="button" onClick={this.increment} disabled={this.state.selectedImage >= images.length - 1}>Next
                     </button>
                 </div>
 

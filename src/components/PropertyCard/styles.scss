@@ -10,8 +10,8 @@ li.property {
   transition: all 500ms ease-out;
 
   &:hover {
-    box-shadow: 0 13px 21px -5px rgba(0, 0, 0, 0.2);
-    background-color:$property-card-color-hover;
+    box-shadow: 0 13px 21px -5px rgba(0, 0, 0, 0.5);
+    //background-color:$property-card-color-hover;
   }
 
   figure {
@@ -41,9 +41,7 @@ li.property {
     }
   }
 
-  .stats-container {
-    margin: 10px;
-
+  .card-content {
     table {
       border-collapse: collapse;
       width: 100%;
@@ -57,27 +55,33 @@ li.property {
       }
     }
 
-    table td, table th {
-      border: 2px dotted grey; 
-    }
-    table tr:first-child td, table tr:first-child th {
-      border-top: 0;
-    }
-    table tr td:first-child, table tr th:first-child {
-      border-left: 0;
-    }
-    table tr:last-child td, table tr:last-child th {
-      border-bottom: 0;
-    }
-    table tr td:last-child, table tr:first-child th {
-      border-right: 0;
-    }
-    
-    .address {
-      text-align: center;
-      border-top: 2px dotted grey;
-      padding: 10px 0 5px 0;
-    }
+    //table td, table th {
+    //  border: 2px dotted grey;
+    //}
+    //table tr:first-child td, table tr:first-child th {
+    //  border-top: 0;
+    //}
+    //table tr td:first-child, table tr th:first-child {
+    //  border-left: 0;
+    //}
+    //table tr:last-child td, table tr:last-child th {
+    //  border-bottom: 0;
+    //}
+    //table tr td:last-child, table tr:first-child th {
+    //  border-right: 0;
+    //}
+
+    //.address {
+    //  text-align: center;
+    //  border-top: 2px dotted grey;
+    //  padding: 10px 0 5px 0;
+    //}
+  }
+
+
+  .card-footer {
+    text-align: center;
+    display: block;
   }
 }
 

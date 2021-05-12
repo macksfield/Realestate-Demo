@@ -4,7 +4,7 @@ import './styles.scss'
 
 const PropertyGrid = ({properties}) =>
     <div>
-        <table id="propertyGrid" className="blueTable">
+        <table id="propertyGrid" className="table">
             <thead>
             <tr>
                 <th>Photo</th>
