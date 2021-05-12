@@ -21,16 +21,16 @@ const PropertyCard = ({property}) =>
             <table className="table">
             <tbody>
                 <tr>
-                    <th>Year Built</th>
-                    <td>{property.physical ? property.physical.yearBuilt : noData}</td>
+                    <td>Year Built</td>
+                    <th>{property.physical ? property.physical.yearBuilt : noData}</th>
                 </tr>
                 <tr>
-                    <th>Monthly Rent</th>
-                    <td>{property.financial ? '$'+property.financial.monthlyRent.toLocaleString(undefined, {minimumFractionDigits:2}) : noData}</td>
+                    <td>Monthly Rent</td>
+                    <th>{property.financial ? '$'+property.financial.monthlyRent.toLocaleString(undefined, {minimumFractionDigits:2}) : noData}</th>
                 </tr>
                 <tr>
-                    <th>Gross Yield %</th>
-                    <td>{property.financial ? (((property.financial.monthlyRent * 12) / property.financial.listPrice)*100).toLocaleString(undefined, {minimumFractionDigits:2,maximumFractionDigits:2})+'%' : noData}</td>
+                    <td>Gross Yield %</td>
+                    <th>{property.financial ? (((property.financial.monthlyRent * 12) / property.financial.listPrice)*100).toLocaleString(undefined, {minimumFractionDigits:2,maximumFractionDigits:2})+'%' : noData}</th>
                 </tr>
             </tbody>
             </table>
