@@ -5,8 +5,8 @@ const Header = () =>
     <div>
         <nav id="header" className={"navbar is-info navbar-menu"}>
             <div className="navbar-start">
-                <a className="navbar-item home">
-                    <a href="/"><h1>React, Router, Redux, Redux-Thunk Example Project Architecture</h1></a>
+                <a className="navbar-item home" href="/">
+                    <h1>React, Router, Redux, Redux-Thunk Example Project Architecture</h1>
                 </a>
             </div>
             <div className="navbar-end">
