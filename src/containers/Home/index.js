@@ -18,7 +18,7 @@ class Home extends Component {
         return (
             <div className="home">
                 <div className="controls">
-                    <button onClick={() => actions.switchView.viewActions(cardView ? false : true)}>{cardView ? 'List View' : 'Card View'}</button>
+                    <button className={"button"} onClick={() => actions.switchView.viewActions(cardView ? false : true)}>{cardView ? 'List View' : 'Card View'}</button>
                 </div>
                 {cardView === true ?
                     <PropertyList properties={properties} propertyDetails={actions.propertyDetails}/> :
