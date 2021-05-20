@@ -3,7 +3,7 @@ import './styles.scss'
 import notfound from '../../images/notfound.png'
 import {Link} from 'react-router-dom';
 
-const noData = 'No data available.';
+const noData = 'No data';
 
 const PropertyCard = ({property}) =>
     <Link to={{pathname: '/propertyDetails/' + property.id, state: {selectedProperty: property}}}>
